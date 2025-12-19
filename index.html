@@ -138,11 +138,9 @@
         <button class="bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold tracking-[0.2em] hover:bg-pink-600 transition-all">PEDIR KIT</button>
     </nav>
 
-    <!-- HERO: Parallax + Fade In -->
+    <!-- HERO -->
     <section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
         <div class="container mx-auto px-6 relative z-10">
-            
-            <!-- Capa Parallax: Texto de Fondo -->
             <div class="absolute inset-0 flex items-center justify-center -z-10 overflow-hidden">
                 <div class="text-huge text-pink-50 parallax-element select-none whitespace-nowrap" data-speed="0.1">
                     ESSENCE BLOOM ESSENCE
@@ -161,7 +159,6 @@
                     <span class="italic font-light text-pink-400">cada capa.</span>
                 </h1>
 
-                <!-- Microinteracción: La caja reacciona al mouse y al scroll -->
                 <div class="relative mt-20 mb-20 reveal active slide-up" style="transition-delay: 600ms;">
                     <img src="https://i.imgur.com/5zmLdyR.png" alt="Caja Bloom" 
                          class="w-full max-w-xl mx-auto drop-shadow-[0_60px_100px_rgba(244,114,182,0.3)] parallax-element" 
@@ -178,7 +175,7 @@
         </div>
     </section>
 
-    <!-- RITUAL: Slide Up / Slide Sides -->
+    <!-- RITUAL -->
     <section id="ritual" class="py-40 relative bg-white overflow-hidden">
         <div class="container mx-auto px-8">
             <div class="text-center mb-32 reveal slide-up">
@@ -187,25 +184,22 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Paso 1: Slide Left -->
                 <div class="reveal slide-left glass-card rounded-[4rem] p-12 text-center" style="transition-delay: 100ms;">
                     <div class="w-24 h-24 bg-pink-50 rounded-3xl flex items-center justify-center mx-auto mb-10 text-pink-400">
                         <i data-lucide="droplets" class="w-12 h-12 ani-pulse"></i>
                     </div>
                     <h3 class="text-3xl font-bold mb-4">01. Pureza</h3>
-                    <p class="text-gray-500 font-light leading-relaxed">Limpieza botánica profunda que elimina residuos y toxinas, abriendo los canales de nutrición.</p>
+                    <p class="text-gray-500 font-light leading-relaxed">Limpieza botánica profunda que elimina residuos y toxinas.</p>
                 </div>
 
-                <!-- Paso 2: Slide Up -->
                 <div class="reveal slide-up glass-card rounded-[4rem] p-12 text-center border-pink-200" style="transition-delay: 300ms;">
                     <div class="w-24 h-24 bg-pink-500 rounded-3xl flex items-center justify-center mx-auto mb-10 text-white shadow-lg">
                         <i data-lucide="zap" class="w-12 h-12 ani-pulse"></i>
                     </div>
                     <h3 class="text-3xl font-bold mb-4">02. Recarga</h3>
-                    <p class="text-gray-500 font-light leading-relaxed">Inyección de energía iónica que repara las roturas térmicas y químicas en el núcleo de la fibra.</p>
+                    <p class="text-gray-500 font-light leading-relaxed">Inyección de energía iónica que repara las roturas térmicas.</p>
                 </div>
 
-                <!-- Paso 3: Slide Right -->
                 <div class="reveal slide-right glass-card rounded-[4rem] p-12 text-center" style="transition-delay: 500ms;">
                     <div class="w-24 h-24 bg-pink-100 rounded-3xl flex items-center justify-center mx-auto mb-10 text-pink-300">
                         <div class="ani-spin">
@@ -213,22 +207,24 @@
                         </div>
                     </div>
                     <h3 class="text-3xl font-bold mb-4">03. Sellado</h3>
-                    <p class="text-gray-500 font-light leading-relaxed">Escudo termoprotector que cristaliza el tratamiento y bloquea la humedad externa.</p>
+                    <p class="text-gray-500 font-light leading-relaxed">Escudo termoprotector que cristaliza el tratamiento.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- EXPERIENCIA: Parallax Image + Fade In -->
+    <!-- EXPERIENCIA: Tamaño Ajustado -->
     <section id="experiencia" class="py-40 bg-gray-50 relative overflow-hidden">
         <div class="container mx-auto px-8 flex flex-col lg:flex-row items-center gap-24">
             <div class="lg:w-1/2 reveal slide-left relative">
-                <div class="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1519735811561-7a1d005586f2?auto=format&fit=crop&q=80&w=2000" 
-                         class="w-full h-[600px] object-cover parallax-element" data-speed="0.05">
+                <!-- Contenedor adaptado al tamaño de la imagen -->
+                <div class="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl bg-white">
+                    <img src="https://i.imgur.com/bMmLVHq.png" 
+                         alt="Modelo Bloom"
+                         class="w-full h-auto object-cover parallax-element scale-105" 
+                         data-speed="0.02">
                 </div>
-                <!-- Elemento decorativo flotante -->
-                <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-pink-400 rounded-full flex items-center justify-center text-white p-8 text-center font-bold italic reveal slide-up" style="transition-delay: 400ms;">
+                <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-pink-400 rounded-full flex items-center justify-center text-white p-8 text-center font-bold italic reveal slide-up shadow-xl" style="transition-delay: 400ms;">
                     "Brillo que cuenta una historia."
                 </div>
             </div>
@@ -244,106 +240,70 @@
                             <p class="text-gray-400">Suavidad táctil inmediata desde la primera aplicación.</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-6">
-                        <div class="mt-1 p-2 bg-pink-100 rounded-lg text-pink-500"><i data-lucide="check-circle-2"></i></div>
-                        <div>
-                            <h4 class="text-xl font-bold">Resistencia Térmica</h4>
-                            <p class="text-gray-400">Protege hasta los 230°C de herramientas de calor.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COMPRA: Microinteracciones Finales -->
+    <!-- COMPRA -->
     <section id="comprar" class="py-40 bg-white">
         <div class="container mx-auto px-8 text-center">
             <div class="reveal slide-up">
-                <h2 class="text-6xl md:text-9xl font-black mb-20 tracking-tighter">EL MOMENTO ES <br> <span class="text-pink-500">AHORA.</span></h2>
-                
+                <h2 class="text-6xl md:text-9xl font-black mb-20 tracking-tighter uppercase text-pink-500">Ahora.</h2>
                 <div class="max-w-5xl mx-auto glass-card rounded-[5rem] p-12 md:p-24 flex flex-col lg:flex-row items-center gap-16 border-pink-100 relative overflow-hidden">
-                    <!-- Efecto de Luz Parallax -->
-                    <div class="absolute -top-20 -left-20 w-64 h-64 bg-pink-200/30 blur-3xl parallax-element" data-speed="0.2"></div>
-                    
                     <div class="lg:w-1/2">
-                        <img src="https://i.imgur.com/5zmLdyR.png" alt="Kit Completo" class="w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700">
+                        <img src="https://i.imgur.com/5zmLdyR.png" alt="Kit Completo" class="w-full h-auto drop-shadow-2xl">
                     </div>
-                    
                     <div class="lg:w-1/2 text-left">
-                        <div class="inline-block px-4 py-1 bg-black text-white rounded-lg text-[10px] font-bold tracking-widest uppercase mb-8">Best Seller</div>
                         <h3 class="text-5xl font-bold mb-6 italic">Ritual Completo Bloom</h3>
-                        <p class="text-gray-400 mb-10 font-light">Incluye Shampoo (250ml), Repolarizador (250ml) y Termoprotector (120ml). Envío prioritario incluido.</p>
-                        
                         <div class="flex items-end gap-4 mb-12">
                             <span class="text-6xl font-black text-pink-500 leading-none">$89.900</span>
-                            <span class="text-2xl text-gray-300 line-through font-light">$120.000</span>
                         </div>
-                        
-                        <button class="btn-bloom w-full text-xl py-6 rounded-[2rem]">PEDIR MI CAJA HOY</button>
+                        <button class="btn-bloom w-full text-xl py-6 rounded-[2rem]">PEDIR MI CAJA</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-20 border-t border-pink-50">
-        <div class="container mx-auto px-8 text-center">
-            <div class="text-4xl font-black text-pink-500 italic mb-10">Bloom.</div>
-            <div class="flex justify-center gap-10 mb-16">
-                <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors"><i data-lucide="instagram"></i></a>
-                <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors"><i data-lucide="facebook"></i></a>
-                <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors"><i data-lucide="message-circle"></i></a>
-            </div>
-            <p class="text-[10px] font-bold text-gray-300 tracking-[0.5em] uppercase">&copy; 2024 Bloom Rituals. Belleza sin límites.</p>
-        </div>
+    <footer class="py-20 border-t border-pink-50 text-center">
+        <div class="text-4xl font-black text-pink-500 italic mb-10">Bloom.</div>
+        <p class="text-[10px] font-bold text-gray-300 tracking-[0.5em] uppercase">&copy; 2024 Bloom Rituals.</p>
     </footer>
 
     <script>
-        lucide.createIcons();
-
-        // --- SISTEMA PARALLAX OPTIMIZADO ---
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallaxItems = document.querySelectorAll('.parallax-element');
-            
-            parallaxItems.forEach(item => {
-                const speed = parseFloat(item.getAttribute('data-speed'));
-                const yPos = -(scrolled * speed);
-                item.style.transform = `translateY(${yPos}px)`;
-            });
-        });
-
-        // --- SISTEMA REVEAL (Fade + Slide) ---
-        const revealOptions = {
-            threshold: 0.15,
-            rootMargin: "0px 0px -50px 0px"
+        // --- INICIALIZACIÓN SEGURA DE LUCIDE ---
+        const initIcons = () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            } else {
+                setTimeout(initIcons, 100);
+            }
         };
 
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    // Una vez activado, dejamos de observar para mejorar rendimiento
-                    revealObserver.unobserve(entry.target);
-                }
+        window.onload = () => {
+            initIcons();
+            
+            // --- PARALLAX ---
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                document.querySelectorAll('.parallax-element').forEach(item => {
+                    const speed = parseFloat(item.getAttribute('data-speed'));
+                    item.style.transform = `translateY(${-(scrolled * speed)}px)`;
+                });
             });
-        }, revealOptions);
 
-        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+            // --- REVEAL ---
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.15 });
 
-        // --- MOUSE TRACKING MICROINTERACTION ---
-        // La caja en el hero se mueve ligeramente con el cursor
-        const heroBox = document.querySelector('.parallax-element[data-speed="-0.05"]');
-        if(window.innerWidth > 1024) {
-            document.addEventListener('mousemove', (e) => {
-                const x = (window.innerWidth / 2 - e.pageX) / 50;
-                const y = (window.innerHeight / 2 - e.pageY) / 50;
-                heroBox.style.filter = `drop-shadow(${x}px ${y+60}px 100px rgba(244,114,182,0.3))`;
-                heroBox.style.marginLeft = `${x/2}px`;
-            });
-        }
+            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+        };
     </script>
 </body>
 </html>
